@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Sanity limpieza y aprovisionamiento de recursos" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-02-16T20:53:55" hostname="22LAP5CD1195R94" time="81.743">
+  <properties/>
+  <testcase name="se requiere realizar una activacion de una linea en prepago" classname="Sanity limpieza y aprovisionamiento de recursos" time="81.743">
+    <failure message="net.thucydides.core.webdriver.exceptions.ElementShouldBePresentException: Expected condition failed: waiting for CesionPortalCRMPage.mensajes to be present (tried for 18 second(s) with 100 milliseconds interval)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: '22LAP5CD1195R94', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'&#10;Driver info: driver.version: unknown" type="net.thucydides.core.webdriver.exceptions.ElementShouldBePresentException">net.thucydides.core.webdriver.exceptions.ElementShouldBePresentException: Expected condition failed: waiting for CesionPortalCRMPage.mensajes to be present (tried for 18 second(s) with 100 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '22LAP5CD1195R94', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: driver.version: unknown
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.throwShouldBePresentErrorWithCauseIfPresent(WebElementFacadeImpl.java:1061)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilPresent(WebElementFacadeImpl.java:1034)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.annotations.locators.AbstractSingleItemHandler.invoke(AbstractSingleItemHandler.java:45)
+	at com.sun.proxy.$Proxy27.waitUntilPresent(Unknown Source)
+	at com.indra.actions.CesionPortalCRMActions.executeContractAssignment(CesionPortalCRMActions.java:47)
+	at com.indra.steps_definitions.SanitySteps.seHaceLaCesionDeContratoDeUnaLineaPreAPos(SanitySteps.java:134)
+	at ✽.Se hace la cesion de contrato de una linea pre a pos(src/test/resources/features/execute.feature:40)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for CesionPortalCRMPage.mensajes to be present (tried for 18 second(s) with 100 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: '22LAP5CD1195R94', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:304)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at net.serenitybdd.core.pages.WebElementFacadeImpl.waitUntilPresent(WebElementFacadeImpl.java:1031)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at net.thucydides.core.annotations.locators.AbstractSingleItemHandler.invoke(AbstractSingleItemHandler.java:45)
+	at com.sun.proxy.$Proxy27.waitUntilPresent(Unknown Source)
+	at com.indra.actions.CesionPortalCRMActions.executeContractAssignment(CesionPortalCRMActions.java:47)
+	at com.indra.steps_definitions.SanitySteps.seHaceLaCesionDeContratoDeUnaLineaPreAPos(SanitySteps.java:134)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at cucumber.runtime.Utils$1.call(Utils.java:31)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:25)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:37)
+	at cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:40)
+	at cucumber.api.TestStep.executeStep(TestStep.java:102)
+	at cucumber.api.TestStep.run(TestStep.java:83)
+	at cucumber.api.TestCase.run(TestCase.java:58)
+	at cucumber.runner.Runner.runPickle(Runner.java:80)
+	at cucumber.runtime.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:140)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+	at cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:73)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:118)
+	at cucumber.api.junit.Cucumber.runChild(Cucumber.java:56)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at cucumber.api.junit.Cucumber$1.evaluate(Cucumber.java:127)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:121)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:182)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:164)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:414)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:64)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:48)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:56)
+	at java.lang.Thread.run(Thread.java:748)
+</failure>
+  </testcase>
+  <system-out><![CDATA[15:53:56.903 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+15:53:56.903 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: true, browserName: firefox, firefox_profile: org.openqa.selenium.firefox..., headless: false, loggingPrefs: org.openqa.selenium.logging..., marionette: true, moz:firefoxOptions: {}, platform: ANY, version: }
+15:54:02.774 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Opening darkroom
+15:54:02.775 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Darkroom processing line starting up
+15:54:02.951 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Sanity Ambientes\PrepaidAutomation - Semilla 10\target\site\serenity\505e6849a59f23caa50316930ba0fe99aae7daaf3ede0ae10996fa27772f375a.png
+15:54:03.423 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Sanity Ambientes\PrepaidAutomation - Semilla 10\target\site\serenity\560b47e9bdb8e6dab7dab102bf305b29920e56c82a8683e0cf7c7940b0c2e543.png
+15:54:07.007 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Sanity Ambientes\PrepaidAutomation - Semilla 10\target\site\serenity\9559b37d4e320a6aaf70f554ff22bf2ba50d008468b2c99409ed0553fc780691.png
+15:54:09.058 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Sanity Ambientes\PrepaidAutomation - Semilla 10\target\site\serenity\565d32fbc8819e8c4e27ba9f2899bd2b83a01dd7c7dad5d6e9af92cdd4abf2cd.png
+15:54:09.598 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Sanity Ambientes\PrepaidAutomation - Semilla 10\target\site\serenity\bd5ce7a9de06c70fc93e33654ee47986218c53b08da6a31250190aef57f1dc75.png
+15:54:10.119 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Sanity Ambientes\PrepaidAutomation - Semilla 10\target\site\serenity\73dc0c7779899e94be3c7bd2f26cf9fc61e4f54ac01c1b5be8a18529b7ee7a0e.png
+15:54:10.614 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Sanity Ambientes\PrepaidAutomation - Semilla 10\target\site\serenity\8e8e9d743ccc283d993e198fd8cdf621982af78477897ba122cc8f200ae56e1f.png
+15:54:10.616 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-3140525808830604673
+15:54:10.616 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Sanity Ambientes\PrepaidAutomation - Semilla 10\target\site\serenity\8e8e9d743ccc283d993e198fd8cdf621982af78477897ba122cc8f200ae56e1f.png
+15:54:12.684 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Sanity Ambientes\PrepaidAutomation - Semilla 10\target\site\serenity\033de04ee2b7a88317ac7359135149483eee38777b7b95bd6e2c5597188aefbf.png
+15:54:14.243 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Sanity Ambientes\PrepaidAutomation - Semilla 10\target\site\serenity\be1ed0e7429c4fe2759cc0e15606bee13028082cc1edae1878014c797a18c12b.png
+15:54:17.086 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Sanity Ambientes\PrepaidAutomation - Semilla 10\target\site\serenity\03716b009e921a9237c5c758f25e4a249301007e3f6178897398039d32e035c5.png
+15:54:17.088 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-5889254390028901571
+15:54:17.088 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Sanity Ambientes\PrepaidAutomation - Semilla 10\target\site\serenity\03716b009e921a9237c5c758f25e4a249301007e3f6178897398039d32e035c5.png
+15:54:17.541 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Sanity Ambientes\PrepaidAutomation - Semilla 10\target\site\serenity\478e51dd48446a7276a49bff5cc2d7d7f060819d083575c1d24814a5ce24ea81.png
+15:54:17.901 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Sanity Ambientes\PrepaidAutomation - Semilla 10\target\site\serenity\656cf697cf4bc88ab8a737fb2902cc3cb380aac826ec25cd255bd64383d42fab.png
+15:54:18.260 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Sanity Ambientes\PrepaidAutomation - Semilla 10\target\site\serenity\6a77eb0f4a0cfe62758f801dfe5aa99b3c2bab3a902ab372dc827c788abb6772.png
+15:54:20.352 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Sanity Ambientes\PrepaidAutomation - Semilla 10\target\site\serenity\8964f32f588d2eb5e74cd85256a7aef2ec9c4ed2b9aa54f7aa8708cdb1eb724f.png
+15:54:20.976 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Sanity Ambientes\PrepaidAutomation - Semilla 10\target\site\serenity\3e00cee1beb9c474b6a708862d33ca52d3987a880051350efdd99c1cb957d012.png
+15:54:21.317 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Sanity Ambientes\PrepaidAutomation - Semilla 10\target\site\serenity\9199cc6dedb7a7c50668b8d24ba0b290bf3944d726898ea6ceadcdbf1161b0bd.png
+15:54:21.672 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Sanity Ambientes\PrepaidAutomation - Semilla 10\target\site\serenity\9199cc6dedb7a7c50668b8d24ba0b290bf3944d726898ea6ceadcdbf1161b0bd.png
+15:54:22.152 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Sanity Ambientes\PrepaidAutomation - Semilla 10\target\site\serenity\b0c692cf7cf6d5634358e62868463099131b751bf17f06e8c1bf3f53f3beefd0.png
+15:54:22.515 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Sanity Ambientes\PrepaidAutomation - Semilla 10\target\site\serenity\b0c692cf7cf6d5634358e62868463099131b751bf17f06e8c1bf3f53f3beefd0.png
+15:55:14.527 [Test worker] DEBUG net.serenitybdd.core.photography.Darkroom - Send negative for processing for C:\Sanity Ambientes\PrepaidAutomation - Semilla 10\target\site\serenity\b9996066131394bb244e1898c07a85164666308a7b6fcd3d63ff760db0bef0da.png
+15:55:14.529 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Processing screenshot image in /var/screenshots/screenshot-7437622642458253919
+15:55:14.529 [Darkroom Processing Line] DEBUG net.serenitybdd.core.photography.DarkroomProcessingLine - Saving screenshot to C:\Sanity Ambientes\PrepaidAutomation - Semilla 10\target\site\serenity\b9996066131394bb244e1898c07a85164666308a7b6fcd3d63ff760db0bef0da.png
+15:55:17.365 [Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - ?[91m
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED: se requiere realizar una activacion de una linea en prepago
+--------------------------------------------------------------------------?[0m
+15:55:17.367 [Test worker] DEBUG net.thucydides.core.steps.ConsoleLoggingListener - RELATED ISSUES: 
+15:55:17.434 [Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - ?[91mTEST FAILED AT STEP When Se hace la cesion de contrato de una linea pre a pos?[0m
+15:55:17.434 [Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Expected condition failed: waiting for CesionPortalCRMPage.mensajes to be present (tried for 18 second(s) with 100 milliseconds interval)Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'System info: host: '22LAP5CD1195R94', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'Driver info: driver.version: unknownBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'System info: host: '22LAP5CD1195R94', ip: '192.168.0.11', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'Driver info: driver.version: unknown
+]]></system-out>
+  <system-err><![CDATA[feb 16, 2022 3:53:56 PM org.openqa.selenium.remote.DesiredCapabilities firefox
+INFORMACIÓN: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
+feb 16, 2022 3:53:56 PM org.openqa.selenium.remote.DesiredCapabilities firefox
+INFORMACIÓN: Using `new FirefoxOptions()` is preferred to `DesiredCapabilities.firefox()`
+1645044837767	geckodriver	INFO	Listening on 127.0.0.1:39224
+1645044838323	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\PROJEC~1\\AppData\\Local\\Temp\\rust_mozprofilePLPgT0"
+1645044839096	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1645044839158	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1645044839158	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1645044839158	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1645044839158	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1645044841434	Marionette	INFO	Listening on port 59283
+1645044841498	Marionette	WARN	TLS certificate errors will be ignored for this session
+feb 16, 2022 3:54:01 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+JavaScript warning: http://10.69.60.141:8280/portal/CRMPortal/Consultas?portal:windowState=normal&portal:componentId=gtnc323725e-6efe-4037-9f93-1bc06edfa941&portal:resourceID=/org.rf.res/org/richfaces/ui.pack.js&portal:cacheLevel=PAGE&portal:type=resource&portal:portletMode=view, line 10431: unreachable code after return statement
+JavaScript warning: http://10.69.60.141:8280/portal/CRMPortal/Consultas?portal:windowState=normal&portal:componentId=gtnc323725e-6efe-4037-9f93-1bc06edfa941&portal:resourceID=/org.rf.res/org/richfaces/ui.pack.js&portal:cacheLevel=PAGE&portal:type=resource&portal:portletMode=view, line 10431: unreachable code after return statement
+JavaScript error: http://10.69.60.141:8280/portal/CRMPortal/Consultas, line 1: ReferenceError: setIframeListeners is not defined
+JavaScript warning: http://10.69.60.141:8280/portal/CRMPortal/Postventa?portal:windowState=normal&portal:componentId=gtnf5a1f4f3-5ecc-4e4a-8654-6459a01c3953&portal:resourceID=/org.rf.res/org/richfaces/ui.pack.js&portal:cacheLevel=PAGE&portal:type=resource&portal:portletMode=view, line 10431: unreachable code after return statement
+JavaScript warning: http://10.69.60.141:8280/portal/CRMPortal/Postventa?portal:windowState=normal&portal:componentId=gtnf5a1f4f3-5ecc-4e4a-8654-6459a01c3953&portal:resourceID=/org.rf.res/org/richfaces/ui.pack.js&portal:cacheLevel=PAGE&portal:type=resource&portal:portletMode=view, line 10431: unreachable code after return statement
+JavaScript error: http://10.69.60.141:8280/portal/CRMPortal/Postventa, line 1: ReferenceError: setIframeListeners is not defined
+JavaScript warning: http://10.69.60.138:8080/PostSale/a4j/g/3_3_3.Final/org/ajax4jsf/framework.pack.js, line 5514: unreachable code after return statement
+JavaScript warning: http://10.69.60.138:8080/PostSale/a4j/g/3_3_3.Final/org/richfaces/ui.pack.js, line 12786: unreachable code after return statement
+JavaScript warning: http://10.69.60.138:8080/PostSale/a4j/g/3_3_3.Final/org/richfaces/ui.pack.js, line 12786: unreachable code after return statement
+JavaScript error: http://10.69.60.141:8280/portal/CRMPortal/Postventa, line 1: ReferenceError: setIframeListeners is not defined
+JavaScript warning: http://10.69.60.138:8080/PostSale/a4j/g/3_3_3.Final/org/ajax4jsf/framework.pack.js, line 5514: unreachable code after return statement
+JavaScript warning: http://10.69.60.138:8080/PostSale/a4j/g/3_3_3.Final/org/richfaces/ui.pack.js, line 12786: unreachable code after return statement
+JavaScript warning: http://10.69.60.138:8080/PostSale/a4j/g/3_3_3.Final/org/richfaces/ui.pack.js, line 12786: unreachable code after return statement
+JavaScript error: http://10.69.60.141:8280/portal/CRMPortal/Postventa, line 1: ReferenceError: setIframeListeners is not defined
+1645044914697	Marionette	INFO	Stopped listening on port 59283
+Extension error: [Exception... "Component not initialized"  nsresult: "0xc1f30001 (NS_ERROR_NOT_INITIALIZED)"  location: "JS frame :: moz-extension://736ae4ec-d1dc-4661-abd7-70da098dcad0/main.js :: connect :: line 12066"  data: no] undefined 12066
+[[Exception stack
+connect@moz-extension://736ae4ec-d1dc-4661-abd7-70da098dcad0/main.js:12066:23
+onPortDisconnected@moz-extension://736ae4ec-d1dc-4661-abd7-70da098dcad0/main.js:20316:30
+makeConnection/channel<@moz-extension://736ae4ec-d1dc-4661-abd7-70da098dcad0/main.js:20289:136
+handleDisconnect@moz-extension://736ae4ec-d1dc-4661-abd7-70da098dcad0/main.js:12172:14
+connect/</<@moz-extension://736ae4ec-d1dc-4661-abd7-70da098dcad0/main.js:12052:63
+Current stack
+applySafeWithoutClone@resource://gre/modules/ExtensionCommon.jsm:606:13
+addListener/asyncWithoutClone/<@resource://gre/modules/ExtensionCommon.jsm:2443:39
+]]
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+]]></system-err>
+</testsuite>
